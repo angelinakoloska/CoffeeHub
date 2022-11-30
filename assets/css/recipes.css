@@ -1,0 +1,257 @@
+@import url('./main.css');
+
+
+
+body {
+    background-color: var(--bg-primary);
+    color: #fff;
+}
+
+#filter-selection {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#filter-selection button {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+#filter-selection button:hover {
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+
+#filter-selection button.active {
+    background-color: var(--bg-green);
+    color: #fff;
+}
+
+#recipes-layout .hide {
+    display: none;
+}
+
+#recipes {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#recipes h2 {
+    margin-top: 1rem;
+    padding-right: 2rem;
+}
+
+#recipes-layout {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*padding-top: 1rem;*/
+}
+
+.recipe-item {
+    margin: 0.8rem 1rem;
+}
+
+.recipe__text {
+    line-height: 1.5;
+}
+
+.recipe__text a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.recipe-item h3:hover {
+    text-decoration: underline;
+    color: #385f34;;
+}
+
+.recipe__text h3 {
+    padding-top: 0.8rem;
+}
+
+#recipes-layout img {
+    height: 13rem;
+    width: 21rem;
+    /*width: 100%;*/
+    border-radius: 10px;
+}
+
+.recipe-desc {
+    max-width: 21rem;
+}
+
+/* Page for recipes */
+.hero-recipe img {
+    max-width: 100%;
+    margin: auto;
+}
+
+/*#recipe-focaccia {
+    background-image: url('https://images.unsplash.com/photo-1605466237823-49122fcaf198?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80');
+}*/
+
+.recipe-article {
+    max-width: 900px;
+    margin: auto;
+}
+
+.recipe-intro {
+    text-align: center;
+}
+
+.recipe-intro .recipe-title {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.recipe-intro .recipe-intro-desc {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.recipe-ingredients {
+    margin-top: 1rem;
+    max-width: 500px;
+    color: var(--text-color);
+}
+
+.recipe-ingredients h2 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.recipe-ingredients .ingredients-list {
+    list-style: none;
+    margin-left: 0.8rem;
+    color: var(--text-color);
+}
+
+.recipe-instructions {
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.recipe-instructions h2 {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.recipe-instructions .instructions-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.recipe-instructions .tips {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 1.5;
+}
+
+/* Media queries */
+@media only screen and (min-width: 700px) {
+
+    #recipes-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 1.75rem;
+        align-items: center;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-top: 1.25rem;
+    }
+
+    .hero-recipe {
+        margin: auto;
+    }
+
+    .recipe-info {
+        margin: auto;
+        max-width: 450px;
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    #recipes-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 1.75rem;
+        align-items: center;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-top: 1.25rem;
+    }
+
+    .recipe-info {
+        margin-top: 0.8rem;
+        display: flex;
+        max-width: 900px;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .recipe-intro {
+        max-width: 900px;
+    }
+
+    .recipe-ingredients {
+        width: 1000px;
+        max-width: 1200px;
+    }
+
+    .recipe-instructions {
+        max-width: 950px;
+    }
+    .recipe-instructions h2{
+        text-align: left;
+    }
+
+    .recipe-instructions a {
+        color: #fff;
+    }
+
+    .recipe-instructions a:hover {
+        color: #385f34;
+    }
+    .hero-recipe img {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .recipe-ingredients h2 {
+        text-align: left;
+        margin-left: 0.8rem;
+    }
+
+    .recipe-article .recipe-intro h1 {
+        font-size: 2.25rem;
+    }
+
+}

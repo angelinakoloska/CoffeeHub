@@ -1,0 +1,48 @@
+@import url('./main.css');
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+}
+
+.hero-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-about .hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.about-text-paragraph {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+    .hero-about {
+        height: 12rem;
+    }
+
+    .about-text-paragraph {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.175rem;
+    }
+}

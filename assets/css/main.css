@@ -1,0 +1,303 @@
+:root {
+    --bg-green: #324830;
+    --text-color: #fff;
+    --bg-primary: #1D1C1B;
+    --bg-secondary: #573A0E;
+    --bg-burger:  rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-green: #A8D195;
+        --bg-secondary: #EACCA0;
+        --text-color: #000;
+        --bg-primary: #F1F1F1;
+         --bg-burger:  rgba(255, 255, 255, 0.6);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    background: var(--bg-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    display: block;
+}
+
+nav .logo {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    background: var(--bg-burger);
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    text-align: center;
+    padding-top: 85px;
+    width: 100%;
+}
+
+ul li {
+    height: 30px;
+}
+
+nav .nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+/*nav li {
+    display: none;
+}*/
+
+.closeIcon {
+    display: none;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.hamburger {
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    /*position: fixed;
+    top: 0.5rem;
+    right: 1rem;*/
+    z-index: 100;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: #fff;
+    max-width: 250px;
+    text-align: center;
+}
+
+.become-barista-section {
+    background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.become-barista-text {
+    color: var(--text-color);
+    margin: 1rem 0.5rem;
+    line-height: 1.5;
+}
+
+.become-barista-image img{
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.coffee-section {
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-text {
+    color: var(--text-color);
+    margin: 1rem 0.5rem;
+    line-height: 1.5;
+}
+
+.coffee-image img {
+   max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.latte-art-section {
+    background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latte-art-text {
+    color: var(--text-color);
+    margin: 1rem 0.5rem;
+    line-height: 1.5;
+}
+
+.latte-art-image img {
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background: var(--bg-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.socials a {
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+.email a, .copyright {
+    color: var(--text-color);
+}
+
+.copyright {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        height: 80px;
+    }
+    nav ul {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 0.5rem;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        height: 0px;
+        display: flex;
+    }
+
+    nav .nav-item {
+        padding-right: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        height: 41.5rem;
+    }
+
+    .hero-text {
+        max-width: 320px;
+        font-size: 1.25rem;
+    }
+
+    .become-barista-section, .coffee-section, .latte-art-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 25rem;
+        max-width: 100vw;
+        width: 100%;
+        margin: auto;
+    }
+
+    .become-barista-text, .coffee-text, .latte-art-text {
+        max-width: 682px;
+        line-height: 2;
+        padding: 0 2rem;
+    }
+    .become-barista-text h2, .coffee-text h2, .latte-art-text h2 {
+        font-size: 2rem;
+    }
+
+    .become-barista-text p, .coffee-text p, .latte-art-text p {
+        font-size: 1.5rem;
+    }
+
+    .become-barista-image, .latte-art-image {
+        width: 500px;
+        padding: 1rem 1.5rem;
+    }
+
+    .become-barista-image img, .latte-art-image img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .coffee-image {
+        padding-left: 1rem;
+        width: 900px;
+    }
+    .coffee-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 25rem;
+        margin: auto;
+    }
+
+    .coffee-image img {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 1rem 1.5rem;
+    }
+
+    footer .socials {
+        margin-top: 0;
+    }
+    
+    footer .copyright {
+        margin-bottom: 0;
+    }
+}

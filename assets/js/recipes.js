@@ -228,15 +228,4 @@ buttons.forEach(function(button) {
   button.addEventListener('click', filterButtons)
 })
 
-// pagination function
-/*
-    let page = 1;
-    if (recipeItem >= 20) {
-        page++;
-        place the last element on the next page
-    } else {
-        page = '';
-    }
- */
-
 

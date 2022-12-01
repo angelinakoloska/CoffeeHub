@@ -2,7 +2,7 @@ let recipes = [
     {
         name: 'Chicken Caesar Salad',
         image: 'https://images.unsplash.com/photo-1599021409369-c63af30619db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-        desc: 'A chicken caesar salad is a salad with romano salad with croutons, dressing and cheese ...',
+        desc: 'A chicken caesar salad is a salad with romano salad, croutons, dressing and cheese ...',
         seeMore: 'https://www.spendwithpennies.com/chicken-caesar-salad/',
         category: '🍴 food',
         ingredients: ['' ],

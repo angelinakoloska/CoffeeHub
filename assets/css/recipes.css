@@ -1,7 +1,5 @@
 @import url('./main.css');
 
-
-
 body {
     background-color: var(--bg-primary);
     color: #fff;
@@ -100,10 +98,6 @@ body {
     margin: auto;
 }
 
-/*#recipe-focaccia {
-    background-image: url('https://images.unsplash.com/photo-1605466237823-49122fcaf198?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80');
-}*/
-
 .recipe-article {
     max-width: 900px;
     margin: auto;
@@ -124,6 +118,8 @@ body {
     font-size: 1.1rem;
     line-height: 1.5;
     color: var(--text-color);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .recipe-ingredients {

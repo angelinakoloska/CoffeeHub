@@ -10,6 +10,7 @@ body {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+    margin-right: 1rem;
 }
 
 #filter-selection button {
@@ -24,6 +25,7 @@ body {
     display: flex;
     align-items: center;
     color: #000;
+    padding-bottom: 0.2rem;
 }
 
 #filter-selection button:hover {
@@ -33,7 +35,7 @@ body {
 
 #filter-selection button.active {
     background-color: var(--bg-green);
-    color: #fff;
+    color: var(--text-color);
 }
 
 #recipes-layout .hide {
@@ -216,11 +218,6 @@ body {
         max-width: 900px;
     }
     
-    .recipe-intro .recipe-intro-desc {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .recipe-ingredients {
         width: 1000px;
         max-width: 1200px;

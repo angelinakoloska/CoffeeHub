@@ -215,6 +215,11 @@ body {
     .recipe-intro {
         max-width: 900px;
     }
+    
+    .recipe-intro .recipe-intro-desc {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .recipe-ingredients {
         width: 1000px;
